@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athena Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+            margin: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 400px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .balance {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .actions button,
+        .nav button {
+            width: 100%;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .actions button.sell {
+            background: #f44336;
+        }
+        .nav button {
+            background: #008CBA;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="balance">Balance: $10,000</div>
+        <div class="actions">
+            <button class="buy">Buy</button>
+            <button class="sell">Sell</button>
+        </div>
+        <div class="nav">
+            <button onclick="location.href='education.html'">Education</button>
+            <button onclick="location.href='chatbot.html'">Chatbot</button>
+        </div>
+    </div>
+    <script>
+        document.querySelector('.buy').addEventListener('click', () => {
+            alert('Buy action triggered');
+        });
+        document.querySelector('.sell').addEventListener('click', () => {
+            alert('Sell action triggered');
+        });
+    </script>
+</body>
+</html>
